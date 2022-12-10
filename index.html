@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+	<body>
+		<script>
+			var a=parseInt(prompt("enter a"));
+			var b=parseInt(prompt("enter b"));
+			var operator=String(prompt("Enter operator symbols:"));
+
+			//function definition
+			function add(a,b)
+			{
+				document.write(a+b)
+			}
+			function sub(a,b)
+			{
+				document.write(a-b)
+			}
+			function mul(a,b)
+			{
+				document.write(a*b)
+			}
+			function div(a,b)
+			{
+				document.write(a/b)
+			}
+
+			//calling functions
+			if(operator=='+')
+			{
+				add(a,b);
+			}
+			else if(operator=='-')
+			{
+				sub(a,b);
+			}
+			else if(operator=='*')
+			{
+				mul(a,b);
+			}
+			else if(operator=='/')
+			{
+				div(a,b);
+			}
+			else
+			{
+				document.write("choose valid symbol");
+			}
+		</script>
+	</body>
+</html>
